@@ -1,0 +1,10 @@
+﻿@{
+  ViewData["Title"] = "async 🏎";
+}
+
+<ul>
+  @foreach (var item in ViewData["Messages"] as List<string>)
+  {
+    <li>@item</li>
+  }
+</ul>

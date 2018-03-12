@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - dotnet mvc</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" crossorigin="anonymous">
+</head>
+<body class="pt-5">
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" asp-controller="Home" asp-action="Index">Joe's Cool Dotnet Demo</a>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="chart" asp-action="Index">Charts</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="async" asp-action="Index">Async Stuff</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="container mt-5">
+      <div class="starter-template">
+        <h1 class="text-center">@ViewData["Title"]</h1>
+        @RenderBody()
+      </div>
+    </main>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
